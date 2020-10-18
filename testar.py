@@ -16,7 +16,8 @@ for i in range (1, 10):
     executar_s = "python3  lab"+ lab_number +".py < aux"+ lab_number + "/open/arq0"+ str(i) +".in > "+ dir + "rq0" + str(i) + ".result"
     comparar_s = "diff aux" + lab_number + "/open/arq0" + str(i) + ".out "+ dir + "rq0" + str(i) + ".result"
 
-    print("Linhas diferentes nas saidas:")
+
+    print("Linhas diferentes entre a saida gerada atraves do arq0"+ str(i) + ".in e a saida esperada (arq0" + str(i) + ".out):")
     print("\n")
 
     os.system(executar_s)
